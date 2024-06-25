@@ -7,14 +7,27 @@
    box-sizing: border-box;
 }
 
-
-
 .maindivaddrecipes{
     width: 100%;
     height: 650px;
     background-image: url(./WhatsApp\ Image\ 2024-06-25\ at\ 5.36.37\ PM.jpeg);
     background-size: cover;
     color: white;
-    
 }
-.caption1{}
+
+.submitbuttom{
+    border-radius: 20px;
+    height: 40px;
+    width: 10%;
+    color: rgb(43, 226, 113);
+}
+
+
+/* recipelist */
+.recipeslistmaindiv{
+    width: 100%;
+    height: 1000px;
+    background-image: url(./reciplist\ backgroundimg.jpeg);
+    background-size: cover;
+    color: white;
+}

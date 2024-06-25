@@ -1,17 +1,17 @@
-
 import { useNavigate } from 'react-router-dom';
+import "./addrecipes.css";
 
-function RecipeListPage(recipes){
+function RecipeListPage({recipes}){
     const router=useNavigate();
 
     return (
-    <div>
+    <div className='recipeslistmaindiv'>
             <h2>Recipe List</h2>
         <div>
         {recipes.map((recipe, index) => (
             <div key={index} >
+                <img src={recipe.image} alt={recipe.title}/>
                 <div onClick={()=>router(`/recipdetailpage/${index}`)}> 
-                    <img src={recipe.image} alt={recipe.title}/>
                 </div>
                 <div onClick={()=>router(`/recipdetailpage/${index}`)}>
                     <h1>{recipe.title}</h1>
@@ -22,7 +22,7 @@ function RecipeListPage(recipes){
        
 ))}
  </div>
- <button onClick={()=>router("/addrecipepage")}>addd</button>
+ <button onClick={()=>router("/addrecipepage")}>Add New Recipe </button>
      </div>
      );
         

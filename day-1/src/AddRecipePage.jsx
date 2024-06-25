@@ -53,7 +53,7 @@ function AddRecipePage  ({ addRecipe }) {
                 <label>Image:</label>
                 <input name="image"  type="text" onChange={(e) =>  setImage(e.target.value)} required />
                 </div>  <br/>
-                <button type="submit">Add Recipe</button>
+                <button type="submit" className="submitbuttom">Add Recipe</button>
             </form>
         </div>
     );
