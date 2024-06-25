@@ -1,0 +1,20 @@
+*
+{
+ padding: 0;
+     margin: 0;
+     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+   Helvetica Neue, sans-serif;
+   box-sizing: border-box;
+}
+
+
+
+.maindivaddrecipes{
+    width: 100%;
+    height: 650px;
+    background-image: url(./WhatsApp\ Image\ 2024-06-25\ at\ 5.36.37\ PM.jpeg);
+    background-size: cover;
+    color: white;
+    
+}
+.caption1{}

@@ -1,0 +1,15 @@
+const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(title, description, ingredients, steps, image);
+    const newRecipe = { 
+        title, 
+        description, 
+        ingredients, 
+        steps, 
+        image };
+
+ setRecipes([...recipes, recipe]);
+ console.log(newRecipe);
+    console.log(recipe);
+    router('/recipeslistpage');
+};
