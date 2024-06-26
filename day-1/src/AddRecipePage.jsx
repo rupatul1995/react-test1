@@ -7,7 +7,7 @@ function AddRecipePage  ({ addRecipe }) {
     const [description, setDescription] = useState('');
     const [ingredients, setIngredients] = useState('');
     const [steps, setSteps] = useState('');
-    const [image, setImage] = useState("");  
+    const [image, setImage] = useState('');  
     const router=useNavigate(); 
 
 
@@ -29,29 +29,29 @@ function AddRecipePage  ({ addRecipe }) {
 
     return (
         <div className="maindivaddrecipes">
-            <h2 className="caption1">Add  New Recipe</h2>
+            <h2 className="caption1">Add New Recipe</h2>
             <br/>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Title:</label>
-                    <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
+                    <label>Title:-</label>
+                    <input className="titlediv" type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
                    
                 </div>  <br/>
                 <div>
-                    <label>Description:</label>
-                    <textarea value={description} onChange={(e) => setDescription(e.target.value)} required />
+                    <label>Description:-</label>
+                    <textarea  className="discreptiondiv"  value={description} onChange={(e) => setDescription(e.target.value)} required />
                 </div>  <br/>
                 <div>
-                    <label>Ingredients:</label>
-                    <textarea value={ingredients} onChange={(e) => setIngredients(e.target.value)} required />
+                    <label>Ingredients:-</label>
+                    < textarea className="ingredientdiv"  value={ingredients} onChange={(e) => setIngredients(e.target.value)} required />
                 </div>  <br/>
                 <div>
-                    <label>Preparation Steps:</label>
-                    <textarea value={steps} onChange={(e) => setSteps(e.target.value)} required />
+                    <label> Steps:-</label>
+                    <textarea  className="stepsdiv"  value={steps} onChange={(e) => setSteps(e.target.value)} required />
                 </div>  <br/>
                 <div>
                 <label>Image:</label>
-                <input name="image"  type="text" onChange={(e) =>  setImage(e.target.value)} required />
+                <input  name="image"  className="imageaddrecipe" type="text" onChange={(e) =>  setImage(e.target.value)} required />
                 </div>  <br/>
                 <button type="submit" className="submitbuttom">Add Recipe</button>
             </form>

@@ -7,13 +7,13 @@ function RecipeListPage({recipes}){
     return (
     <div className='recipeslistmaindiv'>
             <h2>Recipe List</h2>
-        <div>
+        <div  className='recipeslistmaindiv2'>
         {recipes.map((recipe, index) => (
-            <div key={index} >
-                <img src={recipe.image} alt={recipe.title}/>
-                <div onClick={()=>router(`/recipdetailpage/${index}`)}> 
+            <div key={index} className='imagediv1' >
+                <div  onClick={()=>router(`/recipdetailpage/${index}`)}> 
+                <img className='imagediv' src={recipe.image} alt={recipe.title}/>
                 </div>
-                <div onClick={()=>router(`/recipdetailpage/${index}`)}>
+                <div className='detailsdiv' onClick={()=>router(`/recipdetailpage/${index}`)}>
                     <h1>{recipe.title}</h1>
                     <p>{recipe.description}</p>
                 </div>
@@ -22,7 +22,7 @@ function RecipeListPage({recipes}){
        
 ))}
  </div>
- <button onClick={()=>router("/addrecipepage")}>Add New Recipe </button>
+ <button className="submitbuttom" onClick={()=>router("/add-recipe")}>Add New Recipe </button>
      </div>
      );
         

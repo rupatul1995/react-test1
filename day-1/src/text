@@ -13,3 +13,14 @@ const handleSubmit = (e) => {
     console.log(recipe);
     router('/recipeslistpage');
 };
+
+
+
+
+
+const [title, setTitle] = useState('');
+const [description, setDescription] = useState('');
+const [ingredients, setIngredients] = useState('');
+const [steps, setSteps] = useState('');
+const [image, setImage] = useState("");  
+const router=useNavigate(); 
